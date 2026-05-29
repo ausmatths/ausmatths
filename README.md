@@ -75,18 +75,18 @@ I build production systems that combine measurable business impact with strong t
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=ausmatths&show_icons=true&theme=tokyonight&hide_border=true" alt="Austin's GitHub stats" width="48%" />
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=ausmatths&show_icons=true&theme=tokyonight&hide_border=true" alt="Austin's GitHub stats" width="48%" />
   <img src="https://streak-stats.demolab.com?user=ausmatths&theme=tokyonight&hide_border=true" alt="Austin's GitHub streak" width="48%" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ausmatths&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" width="40%" />
+  <img src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs?username=ausmatths&layout=compact&theme=tokyonight&hide_border=true" alt="Top languages" width="40%" />
 </p>
 
 ## 🏆 GitHub Trophies
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=ausmatths&theme=onedark&no-frame=true&no-bg=true&margin-w=8" alt="GitHub trophies" />
+  <img src="https://github-profile-trophy.vercel.app/?username=ausmatths&theme=tokyonight&no-frame=true&no-bg=true&margin-w=8" alt="GitHub trophies" />
 </p>
 
 ---
