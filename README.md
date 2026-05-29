@@ -8,15 +8,30 @@
   <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&center=true&vCenter=true&width=850&lines=Software+Engineer;Full-Stack+%7C+AI%2FML+%7C+Cloud-Native+Builder;Building+production-grade+systems+with+speed+and+reliability" alt="Typing intro" />
 </p>
 
-## 🚀 About Me
+## 👋 Recruiter Snapshot
 
-Software Engineer focused on full-stack platforms, AI/ML systems, and scalable cloud deployments.  
-I am currently pursuing an **MS in Computer Science at Seattle University (expected March 2026)** and building products that blend research-grade performance with production reliability.
+Software Engineer specializing in **full-stack development, AI/ML systems, and cloud-native applications**.  
+I build production systems that combine measurable business impact with strong technical execution.
 
-- 🔭 Building **REDvsBLUE**, a live cross-platform sports matchmaking platform
-- 🤖 Shipping AI systems including **GhostAI v2.0** and autonomous trajectory prediction
-- 📈 Former Amazon team lead for 26 engineers, improving reliability from **94% → 99.7%**
-- 🧠 Interested in distributed systems, reinforcement learning, and modern DevOps
+- 🎓 **MS Computer Science, Seattle University** (Expected March 2026)
+- 🚀 Built and shipped **REDvsBLUE** (live cross-platform product)
+- 🤖 Delivered high-performance AI systems for multimodal and autonomous workloads
+- 📈 Led 26-person engineering operations at Amazon, improving reliability from **94% → 99.7%**
+
+## 🧠 Technical Highlights
+
+- **Distributed Product Engineering:** Shipped REDvsBLUE across Android, iOS, web, and macOS using Clean Architecture (22 modules), real-time matchmaking (ELO/Glicko2), and a Kubernetes-backed production setup.
+- **Applied AI/ML Performance:** Achieved **0.64ms** inference latency (**16x faster** than 10ms requirement) for trajectory prediction with multi-sensor fusion and PPO-based reinforcement learning.
+- **LLM Platform Engineering:** Built multi-agent orchestration in GhostAI v2.0 with persistent memory, reducing response times by **73%** and memory use by **70%**.
+- **Reliability & Operations:** Scaled reliability-focused systems with CI/CD, observability (Prometheus/Grafana), and incident-response discipline.
+
+## 📌 Impact Snapshot
+
+- **99.9% uptime** on live production app workloads  
+- **1,601 inferences/second** in autonomous prediction pipeline  
+- **95% test coverage** on AI intern project deliverables  
+- **75% fewer content bugs** through automated QA workflows  
+- **35% faster MTTR** in high-volume operations
 
 ## 🛠️ Tech Stack
 
@@ -26,23 +41,29 @@ I am currently pursuing an **MS in Computer Science at Seattle University (expec
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![TailwindCSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Three.js](https://img.shields.io/badge/Three.js-000000?style=for-the-badge&logo=threedotjs&logoColor=white)
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
 
 ### Backend & AI/ML
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
 ![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
+![Redis](https://img.shields.io/badge/Redis-D92C20?style=for-the-badge&logo=redis&logoColor=white)
 
 ### Tools & Cloud
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![GitLab CI](https://img.shields.io/badge/GitLab_CI-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=FF9900)
 ![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
 ![Cloudflare](https://img.shields.io/badge/Cloudflare-F38020?style=for-the-badge&logo=cloudflare&logoColor=white)
+![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
 
 ## 🌐 Connect With Me
 
@@ -70,4 +91,4 @@ I am currently pursuing an **MS in Computer Science at Seattle University (expec
 
 ---
 
-<p align="center"><b>Thanks for visiting — let's build something impactful.</b></p>
+<p align="center"><b>Open to software engineering opportunities across full-stack, AI/ML, and cloud-native systems.</b></p>
