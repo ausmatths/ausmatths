@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform Your GitHub Profile in 1 Minute</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: white;
+            padding: 40px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #667eea;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            color: #666;
+            font-size: 1.1em;
+            margin: 10px 0;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 8px;
+            border-radius: 3px;
+            color: #856404;
+            font-weight: 600;
+        }
+
+        .main-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .card h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+        }
+
+        .card h3 {
+            color: #764ba2;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        .card ul {
+            margin-left: 20px;
+            margin-bottom: 15px;
+        }
+
+        .card li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        input[type="text"],
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-family: inherit;
+            font-size: 1em;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        textarea {
+            min-height: 150px;
+            resize: vertical;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+        }
+
+        .button {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            font-weight: 600;
+        }
+
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(102, 126, 234, 0.4);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+
+        .button-secondary {
+            background: #6c757d;
+            margin-left: 10px;
+        }
+
+        .button-secondary:hover {
+            box-shadow: 0 6px 12px rgba(108, 117, 125, 0.4);
+        }
+
+        .step-tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .step-tab {
+            padding: 10px 20px;
+            background: #f0f0f0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .step-tab.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .step-tab:hover {
+            border-color: #667eea;
+        }
+
+        .step-content {
+            display: none;
+        }
+
+        .step-content.active {
+            display: block;
+        }
+
+        .checklist {
+            background: #f9f9f9;
+            padding: 20px;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+
+        .checklist-item {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: center;
+        }
+
+        .checklist-item input[type="checkbox"] {
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+        }
+
+        .success-message {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+            display: none;
+        }
+
+        .success-message.show {
+            display: block;
+        }
+
+        .copy-button {
+            background: #28a745;
+            padding: 8px 15px;
+            font-size: 0.9em;
+        }
+
+        .copy-button:hover {
+            box-shadow: 0 6px 12px rgba(40, 167, 69, 0.4);
+        }
+
+        .code-block {
+            background: #f5f5f5;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            margin: 15px 0;
+            overflow-x: auto;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9em;
+            line-height: 1.4;
+        }
+
+        .theme-selector {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .theme-option {
+            padding: 10px 15px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .theme-option:hover {
+            border-color: #667eea;
+        }
+
+        .theme-option.selected {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+
+        .tools-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .tool-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            border-top: 4px solid #667eea;
+        }
+
+        .tool-card h3 {
+            color: #667eea;
+            margin-bottom: 10px;
+        }
+
+        .tool-card p {
+            color: #666;
+            font-size: 0.95em;
+        }
+
+        .tool-card a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .tool-card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            margin-top: 40px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        footer p {
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 1.8em;
+            }
+
+            .step-tabs {
+                flex-direction: column;
+            }
+
+            .step-tab {
+                width: 100%;
+                text-align: center;
+            }
+        }
+
+        .nav-buttons {
+            display: flex;
+            gap: 10px;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .nav-button {
+            flex: 1;
+            padding: 12px;
+        }
+
+        .warning-box {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            color: #856404;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+
+        .info-box {
+            background: #d1ecf1;
+            border: 1px solid #bee5eb;
+            color: #0c5460;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Transform Your GitHub Profile</h1>
+            <p>In <span class="highlight">1 Minute</span> with Claude AI</p>
+            <p style="font-size: 1em; margin-top: 15px;">
+                1 Prompt • Claude Does Everything • Profile Transformed
+            </p>
+        </header>
+
+        <div class="main-content">
+            <!-- Guide Section -->
+            <div class="card">
+                <h2>📖 Quick Guide</h2>
+                
+                <div class="step-tabs">
+                    <div class="step-tab active" onclick="showStep(1)">Step 1</div>
+                    <div class="step-tab" onclick="showStep(2)">Step 2</div>
+                    <div class="step-tab" onclick="showStep(3)">Step 3</div>
+                    <div class="step-tab" onclick="showStep(4)">Step 4</div>
+                    <div class="step-tab" onclick="showStep(5)">Step 5</div>
+                </div>
+
+                <div class="step-content active" id="step-1">
+                    <h3>🔧 Install Claude Extension</h3>
+                    <p>If you don't have it installed:</p>
+                    <ol>
+                        <li>Open Google Chrome</li>
+                        <li>Go to <strong>Chrome Web Store</strong></li>
+                        <li>Search for <strong>"Claude"</strong></li>
+                        <li>Install the official extension by Anthropic</li>
+                        <li>Sign in with your Claude account</li>
+                    </ol>
+                    <div class="info-box">
+                        💡 Tip: Pin Claude to your toolbar by clicking the puzzle icon and pinning it.
+                    </div>
+                </div>
+
+                <div class="step-content" id="step-2">
+                    <h3>📂 Create Profile Repository</h3>
+                    <p>Go to <strong>github.com</strong> and:</p>
+                    <ol>
+                        <li>Click the <strong>+</strong> button (top right)</li>
+                        <li>Select <strong>"New repository"</strong></li>
+                        <li>Name it <strong>exactly</strong> like your username</li>
+                        <li>Make it <strong>PUBLIC</strong></li>
+                        <li>Check <strong>"Add a README file"</strong></li>
+                        <li>Click <strong>"Create repository"</strong></li>
+                    </ol>
+                    <div class="warning-box">
+                        ⚠️ Repository name MUST match your username exactly (case-sensitive)!
+                    </div>
+                </div>
+
+                <div class="step-content" id="step-3">
+                    <h3>✏️ Fill in Your Details</h3>
+                    <p>Go to the <strong>Prompt Generator</strong> on this page and fill in:</p>
+                    <ul>
+                        <li>Your name</li>
+                        <li>Your role/title</li>
+                        <li>Years of experience</li>
+                        <li>Your tech stack</li>
+                        <li>Your social links (YouTube, Medium, LinkedIn)</li>
+                    </ul>
+                    <div class="info-box">
+                        💡 Use a text editor first to fill everything in, then copy the prompt.
+                    </div>
+                </div>
+
+                <div class="step-content" id="step-4">
+                    <h3>⚙️ Paste & Let Claude Work</h3>
+                    <ol>
+                        <li>Go to <strong>github.com/YOUR-USERNAME</strong></li>
+                        <li>Click the <strong>Claude extension</strong> icon</li>
+                        <li><strong>Paste the complete prompt</strong> (from the generator)</li>
+                        <li><strong>Press Enter</strong></li>
+                        <li>Sit back and watch Claude work!</li>
+                    </ol>
+                    <div class="info-box">
+                        ✨ Claude will automatically edit your README in 1-2 minutes.
+                    </div>
+                </div>
+
+                <div class="step-content" id="step-5">
+                    <h3>✅ Verify Your New Profile</h3>
+                    <ol>
+                        <li>Go to <strong>github.com/YOUR-USERNAME</strong></li>
+                        <li><strong>Refresh</strong> the page</li>
+                        <li>See your transformed profile!</li>
+                    </ol>
+                    <p style="margin-top: 20px; font-weight: 600;">You should see:</p>
+                    <ul style="margin-top: 10px;">
+                        <li>✨ Animated typing header</li>
+                        <li>👤 Professional about section</li>
+                        <li>🛠️ Tech stack badges</li>
+                        <li>📱 Social media links</li>
+                        <li>📊 GitHub stats cards</li>
+                        <li>🏆 GitHub trophies</li>
+                    </ul>
+                </div>
+
+                <div class="nav-buttons">
+                    <button class="button nav-button" onclick="prevStep()">← Previous</button>
+                    <button class="button nav-button" onclick="nextStep()">Next →</button>
+                </div>
+            </div>
+
+            <!-- Prompt Generator Section -->
+            <div class="card">
+                <h2>🎯 Prompt Generator</h2>
+                <p style="color: #666; margin-bottom: 20px;">Fill in your details below. The prompt will be generated automatically.</p>
+
+                <form id="promptForm" onsubmit="generatePrompt(event)">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" placeholder="e.g., Jayanth Babu" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="role">Your Role *</label>
+                        <input type="text" id="role" placeholder="e.g., Software Engineer" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Years of Experience *</label>
+                        <input type="text" id="experience" placeholder="e.g., 5 years" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="techStack">Tech Stack *</label>
+                        <textarea id="techStack" placeholder="e.g., React, Python, TypeScript, Node.js, AWS" required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="youtube">YouTube URL (optional)</label>
+                        <input type="text" id="youtube" placeholder="youtube.com/@yourhandle">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="youtubeCount">YouTube Subscribers (if applicable)</label>
+                        <input type="text" id="youtubeCount" placeholder="e.g., 5,000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="medium">Medium URL (optional)</label>
+                        <input type="text" id="medium" placeholder="medium.com/@yourprofile">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mediumCount">Medium Followers (if applicable)</label>
+                        <input type="text" id="mediumCount" placeholder="e.g., 2,000">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instagram">Instagram URL (optional)</label>
+                        <input type="text" id="instagram" placeholder="instagram.com/yourhandle">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="instagramCount">Instagram Followers (if applicable)</label>
+                        <input type="text" id="instagramCount" placeholder="e.g., 1,500">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="linkedin">LinkedIn URL *</label>
+                        <input type="text" id="linkedin" placeholder="linkedin.com/in/yourname" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="portfolio">Portfolio/Website (optional)</label>
+                        <input type="text" id="portfolio" placeholder="yourwebsite.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label>Theme Preference (optional)</label>
+                        <div class="theme-selector">
+                            <div class="theme-option selected" onclick="selectTheme('tokyonight', this)">Tokyo Night</div>
+                            <div class="theme-option" onclick="selectTheme('radical', this)">Radical</div>
+                            <div class="theme-option" onclick="selectTheme('merko', this)">Merko</div>
+                            <div class="theme-option" onclick="selectTheme('onedark', this)">One Dark</div>
+                        </div>
+                        <input type="hidden" id="theme" value="tokyonight">
+                    </div>
+
+                    <div style="display: flex; gap: 10px;">
+                        <button type="submit" class="button" style="flex: 1;">Generate Prompt</button>
+                        <button type="reset" class="button button-secondary" style="flex: 1;">Clear</button>
+                    </div>
+                </form>
+
+                <div id="successMessage" class="success-message">
+                    ✅ Prompt copied to clipboard! Paste it into Claude and press Enter.
+                </div>
+
+                <div id="generatedPrompt" class="code-block" style="display: none; margin-top: 20px;">
+                    <p style="color: #666; margin-bottom: 10px; font-size: 0.9em;">📋 Your Generated Prompt:</p>
+                    <div id="promptText"></div>
+                    <button class="button copy-button" onclick="copyPrompt()" style="margin-top: 15px; width: 100%;">
+                        📋 Copy Full Prompt
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tools & Resources Section -->
+        <div class="tools-section">
+            <div class="tool-card">
+                <h3>📚 Full Documentation</h3>
+                <p>Read the complete step-by-step guide with detailed instructions and screenshots.</p>
+                <a href="./GUIDE.md" target="_blank">Read Full Guide →</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>🆘 Troubleshooting</h3>
+                <p>Having issues? Find solutions to common problems and quick fixes.</p>
+                <a href="./TROUBLESHOOTING.md" target="_blank">View Troubleshooting →</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>⚡ Quick Reference</h3>
+                <p>One-page overview of the entire process with key links and commands.</p>
+                <a href="./QUICK_REFERENCE.md" target="_blank">Quick Reference →</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>🎨 Template Gallery</h3>
+                <p>Check out different profile templates for various career paths.</p>
+                <a href="../templates/" target="_blank">Browse Templates →</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>💡 Real Examples</h3>
+                <p>See how other developers transformed their profiles using this guide.</p>
+                <a href="../examples/" target="_blank">View Examples →</a>
+            </div>
+
+            <div class="tool-card">
+                <h3>🔗 Useful Resources</h3>
+                <p>Links to badge services, documentation, and helpful tools.</p>
+                <a href="https://shields.io" target="_blank">Shields.io Badge Maker →</a>
+            </div>
+        </div>
+
+        <footer>
+            <p><strong>🌟 Your GitHub profile is your first impression</strong></p>
+            <p>Transform it in 1 minute with Claude AI. No coding needed. No markdown knowledge needed.</p>
+            <p style="margin-top: 20px; color: #999; font-size: 0.9em;">
+                Created with ❤️ | Last Updated: 2026-05-29
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        let currentStep = 1;
+        let selectedTheme = 'tokyonight';
+
+        function showStep(step) {
+            // Hide all steps
+            for (let i = 1; i <= 5; i++) {
+                document.getElementById(`step-${i}`).classList.remove('active');
+            }
+
+            // Remove active class from all tabs
+            document.querySelectorAll('.step-tab').forEach(tab => {
+                tab.classList.remove('active');
+            });
+
+            // Show selected step
+            document.getElementById(`step-${step}`).classList.add('active');
+            document.querySelectorAll('.step-tab')[step - 1].classList.add('active');
+            currentStep = step;
+        }
+
+        function nextStep() {
+            if (currentStep < 5) {
+                showStep(currentStep + 1);
+            }
+        }
+
+        function prevStep() {
+            if (currentStep > 1) {
+                showStep(currentStep - 1);
+            }
+        }
+
+        function selectTheme(theme, element) {
+            selectedTheme = theme;
+            document.querySelectorAll('.theme-option').forEach(opt => {
+                opt.classList.remove('selected');
+            });
+            element.classList.add('selected');
+            document.getElementById('theme').value = theme;
+        }
+
+        function generatePrompt(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('name').value;
+            const role = document.getElementById('role').value;
+            const experience = document.getElementById('experience').value;
+            const techStack = document.getElementById('techStack').value;
+            const youtube = document.getElementById('youtube').value;
+            const youtubeCount = document.getElementById('youtubeCount').value;
+            const medium = document.getElementById('medium').value;
+            const mediumCount = document.getElementById('mediumCount').value;
+            const instagram = document.getElementById('instagram').value;
+            const instagramCount = document.getElementById('instagramCount').value;
+            const linkedin = document.getElementById('linkedin').value;
+            const portfolio = document.getElementById('portfolio').value;
+
+            let prompt = `I want you to transform my GitHub profile README. Do NOT ask me any questions. Just execute everything.
+
+MY DETAILS:
+- Name: ${name}
+- Role: ${role}
+- Experience: ${experience}
+- Tech Stack: ${techStack}`;
+
+            if (youtube) prompt += `\n- YouTube: ${youtube} - ${youtubeCount || 'N/A'} subscribers`;
+            if (medium) prompt += `\n- Medium: ${medium} - ${mediumCount || 'N/A'} followers`;
+            if (instagram) prompt += `\n- Instagram: ${instagram} - ${instagramCount || 'N/A'} followers`;
+
+            prompt += `\n- LinkedIn: ${linkedin}`;
+            if (portfolio) prompt += `\n- Portfolio: ${portfolio}`;
+
+            prompt += `
+
+INSTRUCTIONS - DO ALL OF THIS AUTOMATICALLY:
+
+1. Navigate to my GitHub profile README
+   - Go to github.com/[my-username]/[my-username]
+   - Open the README.md file
+   - Click Edit (pencil icon)
+
+2. Delete ALL existing content
+
+3. Create and paste this complete README structure:
+
+SECTION A: ANIMATED HEADER
+- Add a wave GIF greeting
+- Add animated typing effect using readme-typing-svg showing my role and a tagline
+- Include a professional greeting line
+
+SECTION B: ABOUT ME
+- Write a short confident intro about who I am
+- Mention my technical specialization
+- Add 3-4 fun bullet points about my personality
+- Use relevant emojis throughout
+
+SECTION C: TECH STACK
+- Add shields.io badges for ALL my technologies
+- Use colored badges with logos
+- Organize by categories: Languages, Frontend, Backend, Cloud & DevOps, Tools
+
+SECTION D: SOCIAL MEDIA LINKS & PORTFOLIO
+${youtube ? '- YouTube badge with subscriber count\n' : ''}${medium ? '- Medium badge with link\n' : ''}${instagram ? '- Instagram badge with follower count\n' : ''}- LinkedIn badge with professional link
+- Portfolio badge if applicable
+
+SECTION E: GITHUB STATS
+- GitHub Stats Card from anuraghazra/github-readme-stats (theme: ${selectedTheme})
+- GitHub Streak Stats from github-readme-streak-stats (theme: ${selectedTheme})
+- Top Languages Card (theme: ${selectedTheme})
+
+SECTION F: GITHUB TROPHIES
+- Use github-profile-trophy (theme: ${selectedTheme})
+
+SECTION G: VISITOR COUNTER
+- Add komarev profile views counter badge at the top
+
+SECTION H: FOOTER
+- Add a "Let's Connect" section with all social links
+- Add a professional closing line
+
+4. After pasting all content, click 'Commit changes' to save
+
+RULES:
+- Do NOT ask any questions. Just do it.
+- Do NOT stop in the middle. Complete everything.
+- Use proper markdown formatting
+- Make it modern, clean, and professional`;
+
+            document.getElementById('promptText').textContent = prompt;
+            document.getElementById('generatedPrompt').style.display = 'block';
+        }
+
+        function copyPrompt() {
+            const promptText = document.getElementById('promptText').textContent;
+            navigator.clipboard.writeText(promptText).then(() => {
+                const successMsg = document.getElementById('successMessage');
+                successMsg.classList.add('show');
+                setTimeout(() => {
+                    successMsg.classList.remove('show');
+                }, 3000);
+            }).catch(err => {
+                alert('Failed to copy prompt. Please try again.');
+            });
+        }
+    </script>
+</body>
+</html>
