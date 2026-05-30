@@ -306,20 +306,23 @@ class SoftwareEngineer:
 <h2 align="center">&#128202; GitHub Stats</h2>
 
 <p align="center">
-  <img src="https://github-readme-stats-neon.vercel.app/api?username=ausmatths&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" alt="Austin's GitHub Stats" width="49%" />
-  <img src="https://streak-stats.demolab.com/?user=ausmatths&theme=tokyonight&hide_border=true&border_radius=10&mode=weekly" alt="Austin's GitHub Streak" width="49%" />
+  <img src="https://github-readme-stats-neon.vercel.app/api?username=ausmatths&show_icons=true&theme=tokyonight&hide_border=true&count_private=true&include_all_commits=true&rank_icon=github" alt="Austin's GitHub Stats" height="180" />
+  &nbsp;&nbsp;
+  <img src="https://streak-stats.demolab.com/?user=ausmatths&theme=tokyonight&hide_border=true&border_radius=10&mode=weekly" alt="Austin's GitHub Streak" height="180" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-stats-neon.vercel.app/api/top-langs/?username=ausmatths&layout=compact&theme=tokyonight&hide_border=true&langs_count=10" alt="Top Languages" width="44%" />
+  <img src="https://github-readme-stats-neon.vercel.app/api/top-langs/?username=ausmatths&layout=compact&theme=tokyonight&hide_border=true&langs_count=10&card_width=500" alt="Top Languages" height="160" />
 </p>
 
 <!-- ▓▓▓ PROFILE SUMMARY CARDS ▓▓▓ -->
 
 <p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ausmatths&theme=tokyonight" alt="Repos Per Language" width="32%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ausmatths&theme=tokyonight" alt="Most Commit Language" width="32%" />
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ausmatths&theme=tokyonight&utcOffset=-7" alt="Productive Time" width="32%" />
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=ausmatths&theme=tokyonight" alt="Repos Per Language" height="160" />
+  &nbsp;
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=ausmatths&theme=tokyonight" alt="Most Commit Language" height="160" />
+  &nbsp;
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=ausmatths&theme=tokyonight&utcOffset=-7" alt="Productive Time" height="160" />
 </p>
 
 ---
@@ -329,7 +332,7 @@ class SoftwareEngineer:
 <h2 align="center">&#128200; Contribution Activity</h2>
 
 <p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ausmatths&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00ff88&line=00d9ff&point=7b2fff&area=true&area_color=00ff8814&custom_title=Austin%27s%20Contribution%20Graph" alt="Activity Graph" width="96%" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ausmatths&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=00ff88&line=00d9ff&point=7b2fff&area=true&area_color=00ff8814&custom_title=Austin%27s%20Contribution%20Graph" alt="Activity Graph" />
 </p>
 
 ---
