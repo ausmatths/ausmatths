@@ -220,25 +220,6 @@ class SoftwareEngineer:
       </p>
     </td>
     <td width="50%" valign="top">
-      <h3>&#127968; HouseWhisper</h3>
-      <p><strong>AI-Powered Real Estate Intelligence Platform</strong></p>
-      <p>
-        <a href="https://github.com/ausmatths/housewhisper-interview"><img src="https://img.shields.io/badge/GitHub-housewhisper-181717?style=flat-square&logo=github" alt="github"/></a>
-      </p>
-      <ul>
-        <li>AI-powered property analysis and recommendation engine</li>
-        <li>Natural language search for real estate listings</li>
-        <li>LLM-driven market intelligence and pricing insights</li>
-        <li>Interview project demonstrating full-stack AI integration</li>
-      </ul>
-      <p>
-        <img src="https://img.shields.io/badge/AI%2FML-7B2FBE?style=flat-square" alt="ai"/>
-        <img src="https://img.shields.io/badge/Full--Stack-00B894?style=flat-square" alt="fullstack"/>
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
       <h3>&#128188; AM Portfolio</h3>
       <p><strong>Personal Developer Portfolio</strong></p>
       <p>
@@ -257,6 +238,8 @@ class SoftwareEngineer:
         <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" alt="react"/>
       </p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3>&#127947; HikerConnect</h3>
       <p><strong>Community Platform for Outdoor Enthusiasts</strong></p>
@@ -274,8 +257,6 @@ class SoftwareEngineer:
         <img src="https://img.shields.io/badge/Community%20Platform-00B894?style=flat-square" alt="community"/>
       </p>
     </td>
-  </tr>
-  <tr>
     <td width="50%" valign="top">
       <h3>&#129302; Job Application Automation</h3>
       <p><strong>AI-Powered Job Search Automation</strong></p>
@@ -293,6 +274,8 @@ class SoftwareEngineer:
         <img src="https://img.shields.io/badge/LLM%20Automation-7B2FBE?style=flat-square" alt="llm"/>
       </p>
     </td>
+  </tr>
+  <tr>
     <td width="50%" valign="top">
       <h3>&#129504; AI Academic Projects</h3>
       <p><strong>Seattle University · MS Computer Science</strong></p>
@@ -312,6 +295,7 @@ class SoftwareEngineer:
         <img src="https://img.shields.io/badge/Jupyter-F37626?style=flat-square&logo=jupyter&logoColor=white" alt="jupyter"/>
       </p>
     </td>
+    <td width="50%" valign="top"></td>
   </tr>
 </table>
 
